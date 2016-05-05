@@ -14,6 +14,9 @@
 		AF57CECF1CDA825600604B92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF57CECD1CDA825600604B92 /* LaunchScreen.storyboard */; };
 		AF86D34C1CDADF2C007BAFB4 /* IssueListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF86D34B1CDADF2C007BAFB4 /* IssueListTableViewController.swift */; };
 		AF86D34E1CDADFDA007BAFB4 /* GithubEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF86D34D1CDADFDA007BAFB4 /* GithubEndpoint.swift */; };
+		AF86D3501CDAEB8E007BAFB4 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF86D34F1CDAEB8E007BAFB4 /* Repository.swift */; };
+		AF86D3521CDAEB98007BAFB4 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF86D3511CDAEB98007BAFB4 /* Issue.swift */; };
+		AF86D3541CDAEC63007BAFB4 /* IssueTrackerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF86D3531CDAEC63007BAFB4 /* IssueTrackerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		AF57CED01CDA825600604B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF86D34B1CDADF2C007BAFB4 /* IssueListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueListTableViewController.swift; sourceTree = "<group>"; };
 		AF86D34D1CDADFDA007BAFB4 /* GithubEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEndpoint.swift; sourceTree = "<group>"; };
+		AF86D34F1CDAEB8E007BAFB4 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		AF86D3511CDAEB98007BAFB4 /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		AF86D3531CDAEC63007BAFB4 /* IssueTrackerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueTrackerModel.swift; sourceTree = "<group>"; };
 		E4B6D520ECDA8A123AE6F3E1 /* Pods-RxMoyaExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMoyaExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxMoyaExample/Pods-RxMoyaExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +89,9 @@
 				AF57CEC41CDA825600604B92 /* AppDelegate.swift */,
 				AF86D34B1CDADF2C007BAFB4 /* IssueListTableViewController.swift */,
 				AF86D34D1CDADFDA007BAFB4 /* GithubEndpoint.swift */,
+				AF86D3511CDAEB98007BAFB4 /* Issue.swift */,
+				AF86D3531CDAEC63007BAFB4 /* IssueTrackerModel.swift */,
+				AF86D34F1CDAEB8E007BAFB4 /* Repository.swift */,
 				AF57CEC81CDA825600604B92 /* Main.storyboard */,
 				AF57CECB1CDA825600604B92 /* Assets.xcassets */,
 				AF57CECD1CDA825600604B92 /* LaunchScreen.storyboard */,
@@ -213,9 +222,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF86D3521CDAEB98007BAFB4 /* Issue.swift in Sources */,
 				AF57CEC51CDA825600604B92 /* AppDelegate.swift in Sources */,
 				AF86D34E1CDADFDA007BAFB4 /* GithubEndpoint.swift in Sources */,
 				AF86D34C1CDADF2C007BAFB4 /* IssueListTableViewController.swift in Sources */,
+				AF86D3541CDAEC63007BAFB4 /* IssueTrackerModel.swift in Sources */,
+				AF86D3501CDAEB8E007BAFB4 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
