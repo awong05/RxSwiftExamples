@@ -12,9 +12,10 @@ import Moya_ModelMapper
 import RxCocoa
 import RxSwift
 
-class IssueListTableViewController: UITableViewController
+class IssueListTableViewController: UIViewController
 {
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var tableView: UITableView!
 
     let disposeBag = DisposeBag()
     var provider: RxMoyaProvider<GitHub>!
