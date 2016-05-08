@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFE3694A1CDEDC5B00913446 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE369491CDEDC5B00913446 /* Repository.swift */; };
+		AFE3694C1CDEDCB700913446 /* RepositoryNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3694B1CDEDCB700913446 /* RepositoryNetworkModel.swift */; };
 		AFEB3CF61CDED5AB0002E5D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEB3CF51CDED5AB0002E5D6 /* AppDelegate.swift */; };
 		AFEB3CF81CDED5AB0002E5D6 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEB3CF71CDED5AB0002E5D6 /* RepositoriesViewController.swift */; };
 		AFEB3CFB1CDED5AB0002E5D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFEB3CF91CDED5AB0002E5D6 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* Begin PBXFileReference section */
 		5162E01108E58F815A454C49 /* Pods_RxAlamofireExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxAlamofireExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC2A4C1E71F3956421F50DB /* Pods-RxAlamofireExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAlamofireExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxAlamofireExample/Pods-RxAlamofireExample.release.xcconfig"; sourceTree = "<group>"; };
+		AFE369491CDEDC5B00913446 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		AFE3694B1CDEDCB700913446 /* RepositoryNetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryNetworkModel.swift; sourceTree = "<group>"; };
 		AFEB3CF21CDED5AB0002E5D6 /* RxAlamofireExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxAlamofireExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFEB3CF51CDED5AB0002E5D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFEB3CF71CDED5AB0002E5D6 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 			children = (
 				AFEB3CF51CDED5AB0002E5D6 /* AppDelegate.swift */,
 				AFEB3CF71CDED5AB0002E5D6 /* RepositoriesViewController.swift */,
+				AFE369491CDEDC5B00913446 /* Repository.swift */,
+				AFE3694B1CDEDCB700913446 /* RepositoryNetworkModel.swift */,
 				AFEB3CF91CDED5AB0002E5D6 /* Main.storyboard */,
 				AFEB3CFC1CDED5AB0002E5D6 /* Assets.xcassets */,
 				AFEB3CFE1CDED5AB0002E5D6 /* LaunchScreen.storyboard */,
@@ -212,6 +218,8 @@
 			files = (
 				AFEB3CF81CDED5AB0002E5D6 /* RepositoriesViewController.swift in Sources */,
 				AFEB3CF61CDED5AB0002E5D6 /* AppDelegate.swift in Sources */,
+				AFE3694C1CDEDCB700913446 /* RepositoryNetworkModel.swift in Sources */,
+				AFE3694A1CDEDC5B00913446 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
