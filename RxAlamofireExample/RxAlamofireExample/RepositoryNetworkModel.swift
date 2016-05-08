@@ -21,6 +21,10 @@ struct RepositoryNetworkModel {
 
     private func fetchRepositories() -> Driver<[Repository]> {
         return repositoryName
+            .observeOn(ConcurrentDispatchQueueScheduler(globalConcurrentQueueQOS: .Background))
+            .doOn(onNext: { response in
+                UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+            })
             .flatMapLatest { text in
                 return RxAlamofire
                     .requestJSON(.GET, "https://api.github.com/users/\(text)/repos")
@@ -29,6 +33,7 @@ struct RepositoryNetworkModel {
                         return Observable.never()
                     }
             }
+            .observeOn(ConcurrentDispatchQueueScheduler(globalConcurrentQueueQOS: .Background))
             .map { (response, json) -> [Repository] in
                 if let repos = Mapper<Repository>().mapArray(json) {
                     return repos
@@ -36,6 +41,10 @@ struct RepositoryNetworkModel {
                     return []
                 }
             }
+            .observeOn(MainScheduler.instance)
+            .doOn(onNext: { response in
+                UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+            })
             .asDriver(onErrorJustReturn: [])
     }
 }
