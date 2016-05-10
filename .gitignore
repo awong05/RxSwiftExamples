@@ -4,3 +4,4 @@ xcuserdata/
 *.swp
 *~
 Pods/
+node_modules/

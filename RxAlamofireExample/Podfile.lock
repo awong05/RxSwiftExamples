@@ -1,6 +1,16 @@
 PODS:
   - Alamofire (3.3.1)
   - ObjectMapper (1.2.0)
+  - React/Core (0.25.1)
+  - React/RCTImage (0.25.1):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTNetwork (0.25.1):
+    - React/Core
+  - React/RCTText (0.25.1):
+    - React/Core
+  - React/RCTWebSocket (0.25.1):
+    - React/Core
   - RxAlamofire/Core (2.2):
     - Alamofire (~> 3.1)
     - RxSwift (~> 2.1)
@@ -13,11 +23,21 @@ PODS:
 
 DEPENDENCIES:
   - ObjectMapper
+  - React/Core (from `./node_modules/react-native`)
+  - React/RCTImage (from `./node_modules/react-native`)
+  - React/RCTNetwork (from `./node_modules/react-native`)
+  - React/RCTText (from `./node_modules/react-native`)
+  - React/RCTWebSocket (from `./node_modules/react-native`)
   - RxAlamofire/RxCocoa
+
+EXTERNAL SOURCES:
+  React:
+    :path: "./node_modules/react-native"
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
   ObjectMapper: b1e9c7c8a9f6400b72690c80072c131504caa66f
+  React: b35b2b2e07273da1f7266ab2975e0d1033bd913d
   RxAlamofire: 250b7846cedbd189d6190e4f83caa01ee1f1eceb
   RxCocoa: 7d6cd877de99f5640306b3d6cf87f580c1d91b61
   RxSwift: 67b9ef4e8b34fb394e200e754c6a09cc16559f94
