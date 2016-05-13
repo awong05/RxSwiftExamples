@@ -20,5 +20,6 @@ class ReactView: UIView {
     func loadReact() {
         addSubview(rootView)
         rootView.frame = self.bounds
+        rootView.appProperties = ["body": "Testing"]
     }
 }

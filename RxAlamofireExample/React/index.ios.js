@@ -17,6 +17,7 @@ class App extends React.Component {
     return (
       <View style={styles.container}>
         <Text>This is a simple application.</Text>
+        <Text>{this.props.body}</Text>
       </View>
     )
   }
